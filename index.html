@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23002363'/%3E%3Cpath d='M16 17h17c11 0 17 6 17 15s-6 15-17 15H16V17zm11 8v14h6c5 0 8-2 8-7s-3-7-8-7h-6z' fill='%23e8b949'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
   <header class="site-header">
@@ -25,8 +26,9 @@
       <div class="hero-copy">
         <p class="eyebrow">Assistant Professor · Computer Science</p>
         <h1>Building AI systems people can <em>understand</em>, trust, and learn with.</h1>
-        <p class="intro">I am an academic and researcher at Kent State University. My work connects explainable AI, visual analytics, large language models, and human–computer interaction to make intelligent systems more transparent and useful.</p>
-        <div class="actions">
+       <p class="intro">
+  I am an academic and researcher at Kent State University. My research brings together explainable AI, generative AI, large language models, agentic AI, visual analytics, and human–computer interaction to develop intelligent systems that are transparent, trustworthy, interactive, and beneficial to users.
+</p> <div class="actions">
           <a class="button primary" href="#research">Explore my research <span>↓</span></a>
           <a class="button secondary" href="Deepshikha_Bhati_CV.pdf" download>Download CV</a>
         </div>
@@ -36,17 +38,18 @@
           <a href="https://www.linkedin.com/in/deepshikha-bhati-ph-d-50102553/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
       </div>
-      <aside class="hero-card" aria-label="Profile summary">
-        <div class="monogram">DB</div>
-        <p class="card-label">Research at the intersection of</p>
-        <ul><li>Explainable AI</li><li>Human-centered computing</li><li>Generative AI & LLMs</li><li>Visual analytics</li></ul>
-        <div class="metric"><strong>991</strong><span>Google Scholar citations</span></div>
+      <aside class="hero-card" aria-label="Profile photograph and research summary">
+        <div class="portrait-wrap">
+          <img class="portrait" src="deepshikha-bhati.jpg" alt="Dr. Deepshikha Bhati" width="480" height="720">
+          <div class="portrait-caption"><strong>Deepshikha Bhati, Ph.D.</strong><span>AI researcher · educator</span></div>
+        </div>
+        <div class="metric"><strong class="counter" data-target="923">0</strong><span>Google Scholar citations</span></div>
       </aside>
     </section>
 
     <section class="section research" id="research">
       <div class="section-heading"><p class="eyebrow">Research</p><h2>Making intelligence visible and actionable.</h2></div>
-      <div class="research-grid">
+      <div class="research-grid reveal-group">
         <article class="research-lead"><span class="index">01</span><h3>Explainable & Trustworthy AI</h3><p>Methods and visual interfaces that reveal how deep learning models arrive at predictions, with emphasis on post-hoc explanation, feature-level visualization, and medical imaging.</p><div class="tags"><span>XAI</span><span>Medical Imaging</span><span>Deep Learning</span></div></article>
         <article><span class="index">02</span><h3>AI for Learning</h3><p>Retrieval-augmented feedback and quiz generation that support metacognition, accessibility, and equitable STEM learning.</p><div class="tags"><span>RAG</span><span>Learning Technology</span></div></article>
         <article><span class="index">03</span><h3>Interactive Intelligence</h3><p>Human-centered document reading, visualization, and multimodal interfaces that help people explore complex information.</p><div class="tags"><span>HCI</span><span>Visual Analytics</span><span>LLMs</span></div></article>
@@ -61,7 +64,7 @@
         <div><p class="meta">Springer Nature · Published</p><h3>A Beginner’s Guide to Generative AI</h3><p>An introductory path to diffusion models, ChatGPT, and large language models.</p></div>
         <a href="https://link.springer.com/book/10.1007/978-3-031-84724-0" target="_blank" rel="noreferrer" aria-label="View book">↗</a>
       </div>
-      <div class="pub-list">
+      <div class="pub-list reveal-group">
         <article><p class="meta">Electronic Imaging · 2026 · Award-winning paper</p><h3>Easy Interpretation of Image Classification Results with Feature-Level Visualization</h3><p>Bhati, Zhao, Wu, Amiruzzaman, and Yang</p><a href="https://library.imaging.org/ei/articles/38/1/VDA-349" target="_blank" rel="noreferrer">View publication ↗</a></article>
         <article><p class="meta">AI · 2026</p><h3>Mapping the LLM Landscape: A Cross-Family Survey of Architectures, Alignment Methods, and Benchmark Performance</h3><p>Bhati, Neha, Bandaru, Weber, and Gajera</p><a href="https://www.mdpi.com/2673-2688/7/4/142" target="_blank" rel="noreferrer">View publication ↗</a></article>
         <article><p class="meta">IEEE Access · 2025</p><h3>A Survey of Post-Hoc XAI Methods from a Visualization Perspective</h3><p>Bhati, Amiruzzaman, Zhao, Guercio, and Le</p><a href="https://ieeexplore.ieee.org/document/11039632" target="_blank" rel="noreferrer">View publication ↗</a></article>
@@ -82,7 +85,7 @@
 
     <section class="section awards" id="awards">
       <div class="section-heading row"><div><p class="eyebrow">Recognition</p><h2>Selected awards</h2></div><p>Recognition for teaching innovation, research, visualization, and inclusive learning.</p></div>
-      <div class="award-grid">
+      <div class="award-grid reveal-group">
         <article class="featured"><span>2026</span><h3>Platinum Teaching Recognition Award</h3><p>Outstanding contributions to teaching innovation and student learning through AI-augmented feedback systems.</p></article>
         <article><span>2026</span><h3>Kostas Pantazos Memorial Award</h3><p>Outstanding Paper in Visualization and Data Analysis.</p></article>
         <article><span>2025</span><h3>Design Innovation Faculty Fellowship</h3><p>John and Fonda Elliot Design Innovation Faculty Fellowship.</p></article>
@@ -98,6 +101,7 @@
     </section>
   </main>
   <footer><p>© <span id="year"></span> Deepshikha Bhati, Ph.D.</p><p>Kent State University · Kent, Ohio</p></footer>
+  <button class="back-to-top" aria-label="Return to top">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
